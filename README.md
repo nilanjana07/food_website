@@ -1,2 +1,2 @@
 Link to website:
-https://foodie-alpha-sable.vercel.app/
+foodify-trial-first.vercel.app
