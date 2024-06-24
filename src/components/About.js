@@ -3,6 +3,11 @@ import AboutBackGround from '../Assets/about-background.png';
 import AboutBAckgroundImage from '../Assets/about-background-image.png';
 import { BsFillPlayCircleFill } from "react-icons/bs";
 const About = () => {
+  const handleWatchVideoClick = () => {
+    // Open the YouTube link in a new tab
+    window.open('https://youtube.com/shorts/KxwzzK-Dw5g?si=VCbQYkSyqvRIOMGq', '_blank');
+  };
+
   return (
     <div className='about-section-container'>
       <div className='about-background-image-container'>
@@ -28,7 +33,7 @@ const About = () => {
         </p>
         <div className="about-buttons-container">
           <button className="secondary-button">Learn More</button>
-          <button className="watch-video-button">
+          <button className="watch-video-button" onClick={handleWatchVideoClick}>
             <BsFillPlayCircleFill /> Watch Video
           </button>
         </div>
